@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Manager</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <section id="first-screen">
+    <h1>📊 Budget Manager</h1>
+    <h2 id="currentMonth"></h2>
+    <div class="card">
+      <h3>Add New Expense</h3>
+      <div class="input-group">
+        <select id="categorySelect"></select>
+        <input type="number" id="amountInput" placeholder="Amount (kr)">
+        <input type="text" id="descInput" placeholder="Description">
+        <button onclick="addExpense()">Add</button>
+      </div>
+    </div>
+  </section>
+  <section id="second-screen">
+    <div class="card">
+      <h3>Manage Categories</h3>
+      <div class="input-group">
+        <input type="text" id="newCategoryInput" placeholder="Category name">
+        <input type="number" id="newBudgetInput" placeholder="Budget (kr)">
+        <button onclick="addOrUpdateCategory()">Save</button>
+      </div>
+      <ul id="categoryList" class="budget-list"></ul>
+    </div>
+    <div style="text-align:center; margin-top:1rem;">
+      <button onclick="window.location.href='/log.html'">View Expense Log</button>
+      <button onclick="resetLogs()" style="margin-top:0.5rem; background-color:#ef4444;">🔄 Reset This Month</button>
+      <button onclick="downloadBackup()" style="margin-top:0.5rem; background-color:#2563eb;">💾 Backup JSON</button>
+    </div>
+  </section>
+  <script src="/script.js"></script>
+</body>
+</html>
 
