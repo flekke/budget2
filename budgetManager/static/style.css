@@ -1,1 +1,84 @@
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #fefae0;
+  color: #333;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-bottom: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.input-group input,
+.input-group select,
+.input-group button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.input-group button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background-color: #388e3c;
+}
+
+.budget-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.budget-list li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+button {
+  font-weight: bold;
+}
+
+#second-screen button {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
